@@ -24,7 +24,7 @@
             ],
             "styles": [
               "src/styles.css",
-              "assets/font/customfont.css"
+              "src/assets/font/customfont.css"
             ],
             "scripts": []
           },
