@@ -1,0 +1,25 @@
+<div>
+  <div class="outermodel">
+    <div class="innermodel">
+      <div class="modalheading">
+        <div class="h1popup">{{title}}</div>
+        <div class="h2popup" *ngFor="let msg of heading">{{msg}}</div>
+      </div>
+      <hr>
+      <div class="sub" >
+        <div class="row">
+          <div class="h3popup" *ngFor="let text of row1">{{text}}</div>
+        </div>
+        <div class="row">
+          <div class="h3popup" *ngFor="let text of row2">{{text}}</div>
+        </div>
+        <div class="row">
+          <div class="h3popup" *ngFor="let text of row3">{{text}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal"></div>
+</div>
+
+
