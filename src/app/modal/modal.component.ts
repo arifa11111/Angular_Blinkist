@@ -38,8 +38,8 @@ export class ModalComponent implements OnInit {
 
   navFun(i:number){
     if(i==0){
-    console.log('navigate to home')
-    this.router.navigate(['/'])
+      console.log('navigate to home')
+      this.router.navigate(['/'])
     }
   }
 

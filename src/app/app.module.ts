@@ -6,12 +6,16 @@ import { AngularSvgIconModule } from 'angular-svg-icon';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
 import { ModalComponent } from './modal/modal.component';
+import { BookComponent } from './book/book.component';
+import { BookListComponent } from './book-list/book-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
-    ModalComponent
+    ModalComponent,
+    BookComponent,
+    BookListComponent
   ],
   imports: [
     BrowserModule,
