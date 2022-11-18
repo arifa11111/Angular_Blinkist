@@ -10,7 +10,7 @@
         <div class="row" >
           <div class="icontext" *ngFor="let item of row1;let i=index" >
             <svg-icon src={{item[0]}}></svg-icon>
-            <div class="h3popup" (click)="navFun(i)" #f>{{item[1]}}</div>
+            <div class="h3popup" (click)="navFun(i)">{{item[1]}}</div>
           </div>
         </div>
         <div class="row" >

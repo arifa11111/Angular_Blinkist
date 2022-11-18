@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component,OnInit} from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -33,8 +33,6 @@ export class ModalComponent implements OnInit {
     ['../../assets/icons/relationship.svg','Sex & Relationship'],
     ['../../assets/icons/edu.svg','Education'],
   ];
-
-  @ViewChild('f') nativeEle:ElementRef | undefined
 
   constructor( private router: Router) {}
 
