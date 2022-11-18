@@ -1,0 +1,34 @@
+<div class="booklist">
+  <div class="row">
+    <div class="blinks">Trending blinks</div>
+    <div class="container">
+      <ng-container  *ngFor="let book of booklist"let i="index">
+          <app-book class="book" [book]="book"
+                *ngIf="book.audio && book.just==false"
+          ></app-book>
+      </ng-container>
+    </div>
+  </div>
+  <div class="row">
+    <div class="blinks">Just added</div>
+    <div class="container">
+      <ng-container  *ngFor="let book of booklist"let i="index">
+          <app-book class="book" [book]="book"
+                *ngIf="book.just==true"
+          ></app-book>
+      </ng-container>
+    </div>
+  </div>
+  <div class="row">
+    <div class="blinks">Featured audio blinks</div>
+    <div class="container">
+      <ng-container  *ngFor="let book of booklist"let i="index">
+          <app-book class="book" [book]="book"
+                *ngIf="book.audio==true"
+          ></app-book>
+      </ng-container>
+    </div>
+  </div>
+</div>
+
+
