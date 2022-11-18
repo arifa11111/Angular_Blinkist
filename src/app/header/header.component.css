@@ -5,53 +5,47 @@
   font-size: "16px";
   line-height: "20px";
 }
-logo: {
+.logo {
   width: "124.9px";
   height: "26px";
-},
-navItem: {
+}
+.navItem {
   cursor: "pointer";
   color: "#03314B";
-  fontStyle: "normal";
-  fontSize: "16px !important";
-  lineHeight: "20px";
-  fontWeight: "500";
-  "&:hover": {
-    borderBottom: "2px solid #22C870";
-  },
-},
-library: {
+  font-style: "normal";
+  font-size: "16px !important";
+  line-height: "20px";
+  font-weight: "500";
+}
+.library {
   cursor: "pointer";
   color: "#03314B";
-  fontStyle: "normal";
-  fontSize: "16px !important";
-  fontFamily: "Cera Pro !important";
-  lineHeight: "20px";
-  fontWeight: "500";
+  font-style: "normal";
+  font-size: "16px !important";
+  font-family: "Cera Pro !important";
+  line-height: "20px";
+  font-weight: "500";
   display: "flex";
-  justifyContent: "center";
-  alignItems: "center";
-  "&:hover": {
-    borderBottom: "2px solid #22C870";
-  },
-},
-account: {
-  marginLeft: "auto";
+  justify-content: "center";
+  align-items: "center";
+}
+.account {
+  margin-left: "auto";
   position: "relative";
   right: "0px";
-  alignSelf: "center";
-},
-subContainer: {
+  align-self: "center";
+}
+.subContainer {
   display: "flex !important";
-  flexDirection: "row";
-  justifyContent: "space-between";
+  flex-direction: "row";
+  justify-content: "space-between";
   width: "970px !important";
   padding: "0px";
   margin: "0px";
   height: "86px";
-  alignItems: "center";
-},
-pointer:{
+  align-items: "center";
+}
+.pointer{
   cursor: "pointer";
   position: "relative";
   top: "5px";
@@ -59,6 +53,6 @@ pointer:{
 .container
 {
   display: "flex";
-  flexDirection: "row";
+  flex-direction: "row";
   gap: "40px";
 }
