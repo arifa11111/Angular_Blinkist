@@ -1,0 +1,64 @@
+.body1 {
+  color: "#03314B";
+  font-weight: "500";
+  font-style: "normal";
+  font-size: "16px";
+  line-height: "20px";
+}
+logo: {
+  width: "124.9px";
+  height: "26px";
+},
+navItem: {
+  cursor: "pointer";
+  color: "#03314B";
+  fontStyle: "normal";
+  fontSize: "16px !important";
+  lineHeight: "20px";
+  fontWeight: "500";
+  "&:hover": {
+    borderBottom: "2px solid #22C870";
+  },
+},
+library: {
+  cursor: "pointer";
+  color: "#03314B";
+  fontStyle: "normal";
+  fontSize: "16px !important";
+  fontFamily: "Cera Pro !important";
+  lineHeight: "20px";
+  fontWeight: "500";
+  display: "flex";
+  justifyContent: "center";
+  alignItems: "center";
+  "&:hover": {
+    borderBottom: "2px solid #22C870";
+  },
+},
+account: {
+  marginLeft: "auto";
+  position: "relative";
+  right: "0px";
+  alignSelf: "center";
+},
+subContainer: {
+  display: "flex !important";
+  flexDirection: "row";
+  justifyContent: "space-between";
+  width: "970px !important";
+  padding: "0px";
+  margin: "0px";
+  height: "86px";
+  alignItems: "center";
+},
+pointer:{
+  cursor: "pointer";
+  position: "relative";
+  top: "5px";
+}
+.container
+{
+  display: "flex";
+  flexDirection: "row";
+  gap: "40px";
+}
