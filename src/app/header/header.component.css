@@ -35,11 +35,11 @@
   align-self: center;
 }
 
-.subContainer{
+.subContainer {
   display: flex !important;
   flex-direction: row;
   justify-content: space-between;
-  width: 970px !important;
+  width: 990px !important;
   padding: 0px;
   margin: 0px;
   height: 86px;
@@ -47,16 +47,14 @@
 }
 
 .mainContainer {
-    display: flex;
-    flex-direction: row;
-    gap: 60px;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  flex-wrap: wrap;
 }
 
 .pointer {
   cursor: pointer;
-  position: relative;
-  top: 5px;
 }
 
 .container {
@@ -70,6 +68,23 @@
   height: 26px;
 }
 
-.exploreDiv{
+.exploreDiv {
   display: flex;
+}
+
+.downArrow {
+  margin-top: 15px;
+  margin-left: 5px;
+  color: #042330;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
 }
