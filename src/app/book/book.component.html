@@ -8,7 +8,7 @@
           <svg-icon src="../../assets/icons/time.svg"></svg-icon>
           <span class="caption">{{book?.timeStamp}}</span>
         </div>
-        <div class='box' *[ngIf]=book?.reads!=null>
+        <div class='box' *ngIf=book?.reads>
           <svg-icon src="../../assets/icons/user.svg"></svg-icon>
           <span class="caption">{{book?.reads}}</span>
         </div>
