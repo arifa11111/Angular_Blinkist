@@ -1,0 +1,90 @@
+.body1 {
+  color: #03314B;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.navItem {
+  cursor: "pointer";
+  color: "#03314B";
+  font-style: "normal";
+  font-size: "16px !important";
+  line-height: "20px";
+  font-weight: "500";
+}
+
+.library {
+  cursor: pointer;
+  color: #03314B;
+  font-style: normal;
+  font-size: 16px !important;
+  font-family: Cera Pro !important;
+  line-height: 20px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.account {
+  margin-left: auto;
+  position: relative;
+  right: 0px;
+  align-self: center;
+}
+
+.subContainer {
+  display: flex !important;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 990px !important;
+  padding: 0px;
+  margin: 0px;
+  height: 86px;
+  align-items: center;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.logo {
+  width: 124.9px;
+  height: 26px;
+}
+
+.exploreDiv {
+  display: flex;
+}
+
+.downArrow {
+  margin-top: 15px;
+  margin-left: 5px;
+  color: #042330;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
