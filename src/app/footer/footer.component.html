@@ -1,0 +1,21 @@
+<div class="outerfoot">
+  <div class="innerfoot">
+    <div class="title1">
+        <img src={{details[0]}} alt="logo"/>
+        <div class="text">{{details[1]}}</div>
+    </div>
+    <div class="title">
+        <div class="heading" >{{headings[0]}}</div>
+        <div class="caption" *ngFor="let item of links1" >{{item}}</div>
+    </div>
+    <div class="title">
+      <div class="heading" >{{headings[1]}}</div>
+      <div class="caption"  *ngFor="let item of links2">{{item}}</div>
+    </div>
+    <div class="title">
+      <div class="heading" >{{headings[2]}}</div>
+      <div class="caption"  *ngFor="let item of links3">{{item}}</div>
+    </div>
+  </div>
+    <div class="bottom">{{rights}}</div>
+</div>

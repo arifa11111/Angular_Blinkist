@@ -1,1 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'Cera Pro';
+  src: url("assets/font/cerapro-regular.otf");
+}
+
+*{
+  font-family: 'Cera pro';
+  font-style: normal;
+}
