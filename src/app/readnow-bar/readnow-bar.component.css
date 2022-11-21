@@ -1,0 +1,15 @@
+.outer {
+  background: #dfe8f6;
+  border-radius: 0px 0px 8px 8px;
+  width: 283px;
+  height: 15px;
+}
+.readagain{
+  width:  283px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #0365F2;
+  padding-bottom: 0.5rem;
+}

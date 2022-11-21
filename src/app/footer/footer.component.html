@@ -1,21 +1,21 @@
 <div class="outerfoot">
   <div class="innerfoot">
     <div class="title1">
-        <img src={{details[0]}} alt="logo"/>
-        <div class="text">{{details[1]}}</div>
+        <img src={{constants.details[0]}} alt="logo"/>
+        <div class="text">{{constants.details[1]}}</div>
     </div>
     <div class="title">
-        <div class="heading" >{{headings[0]}}</div>
-        <div class="caption" *ngFor="let item of links1" >{{item}}</div>
+        <div class="heading" >{{constants.headings[0]}}</div>
+        <div class="caption" *ngFor="let item of constants.links1" >{{item}}</div>
     </div>
     <div class="title">
-      <div class="heading" >{{headings[1]}}</div>
-      <div class="caption"  *ngFor="let item of links2">{{item}}</div>
+      <div class="heading" >{{constants.headings[1]}}</div>
+      <div class="caption"  *ngFor="let item of constants.links2">{{item}}</div>
     </div>
     <div class="title">
-      <div class="heading" >{{headings[2]}}</div>
-      <div class="caption"  *ngFor="let item of links3">{{item}}</div>
+      <div class="heading" >{{constants.headings[2]}}</div>
+      <div class="caption"  *ngFor="let item of constants.links3">{{item}}</div>
     </div>
   </div>
-    <div class="bottom">{{rights}}</div>
+    <div class="bottom">{{constants.rights}}</div>
 </div>

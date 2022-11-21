@@ -5,14 +5,14 @@
     <div class="cardAuth">{{book?.authorName}}</div>
     <div class="row">
         <div class="box">
-          <svg-icon src="../../assets/icons/time.svg"></svg-icon>
+          <svg-icon src={{constants.sources[0]}} ></svg-icon>
           <span class="caption">{{book?.timeStamp}}</span>
         </div>
         <div class='box' *ngIf=book?.reads>
-          <svg-icon src="../../assets/icons/user.svg"></svg-icon>
+          <svg-icon src={{constants.sources[1]}}></svg-icon>
           <span class="caption">{{book?.reads}}</span>
         </div>
     </div>
-    <button class="btn" >+ Add to library</button>
+    <button class="btn" >{{constants.libraryBtn}}</button>
   </div>
 </div>
