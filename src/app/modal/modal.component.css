@@ -45,7 +45,7 @@
 .modal {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 150%;
   margin-top: 390px;
   background: rgba(157, 163, 166, 0.45);
 }
