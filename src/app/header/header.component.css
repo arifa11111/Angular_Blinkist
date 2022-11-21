@@ -1,9 +1,9 @@
 .body1 {
-  color: "#03314B";
-  font-weight: "500";
-  font-style: "normal";
-  font-size: "16px";
-  line-height: "20px";
+  color: #03314B;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .navItem {
@@ -16,55 +16,60 @@
 }
 
 .library {
-  cursor: "pointer";
-  color: "#03314B";
-  font-style: "normal";
-  font-size: "16px !important";
-  font-family: "Cera Pro !important";
-  line-height: "20px";
-  font-weight: "500";
-  display: "flex";
-  justify-content: "center";
-  align-items: "center";
+  cursor: pointer;
+  color: #03314B;
+  font-style: normal;
+  font-size: 16px !important;
+  font-family: Cera Pro !important;
+  line-height: 20px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .account {
-  margin-left: "auto";
-  position: "relative";
-  right: "0px";
-  align-self: "center";
+  margin-left: auto;
+  position: relative;
+  right: 0px;
+  align-self: center;
 }
 
-.subContainer {
-  display: "flex !important";
-  flex-direction: "row";
-  justify-content: "space-between";
-  width: "970px !important";
-  padding: "0px";
-  margin: "0px";
-  height: "86px";
-  align-items: "center";
+.subContainer{
+  display: flex !important;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 970px !important;
+  padding: 0px;
+  margin: 0px;
+  height: 86px;
+  align-items: center;
 }
 
 .mainContainer {
-  display: "flex";
-    flex-direction: "row";
-    gap: "40px";
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    flex-wrap: wrap;
 }
 
 .pointer {
-  cursor: "pointer";
-  position: "relative";
-  top: "5px";
+  cursor: pointer;
+  position: relative;
+  top: 5px;
 }
 
 .container {
-  display: "flex";
-  flex-direction: "row";
-  gap: "40px";
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
 }
 
 .logo {
-  width: "124.9px";
-  height: "26px";
+  width: 124.9px;
+  height: 26px;
+}
+
+.exploreDiv{
+  display: flex;
 }
