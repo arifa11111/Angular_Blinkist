@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { AppConstants } from '../app.constants';
 import { Book } from './book.model';
 
 @Component({
@@ -10,6 +11,8 @@ export class BookComponent implements OnInit {
 
   @Input() book:Book | undefined;
   @Input() index:number |undefined;
+
+  constructor(public constants:AppConstants){}
 
 
 

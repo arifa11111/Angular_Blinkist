@@ -1,8 +1,8 @@
 <div class="booklist">
   <div class="row">
-    <div class="blinks">Trending blinks</div>
+    <div class="blinks">{{constants.booklist[0]}}</div>
     <div class="container">
-      <ng-container  *ngFor="let book of booklist"let i="index">
+      <ng-container  *ngFor="let book of constants.bookList"let i="index">
           <app-book class="book" [book]="book"
                 *ngIf="book.audio && book.just==false"
           ></app-book>
@@ -10,9 +10,9 @@
     </div>
   </div>
   <div class="row">
-    <div class="blinks">Just added</div>
+    <div class="blinks">{{constants.booklist[1]}}</div>
     <div class="container">
-      <ng-container  *ngFor="let book of booklist"let i="index">
+      <ng-container  *ngFor="let book of constants.bookList"let i="index">
           <app-book class="book" [book]="book"
                 *ngIf="book.just==true"
           ></app-book>
@@ -20,9 +20,9 @@
     </div>
   </div>
   <div class="row">
-    <div class="blinks">Featured audio blinks</div>
+    <div class="blinks">{{constants.booklist[2]}}</div>
     <div class="container">
-      <ng-container  *ngFor="let book of booklist"let i="index">
+      <ng-container  *ngFor="let book of constants.bookList"let i="index">
           <app-book class="book" [book]="book"
                 *ngIf="book.audio==true"
           ></app-book>
