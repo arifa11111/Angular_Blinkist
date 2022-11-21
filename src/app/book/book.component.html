@@ -1,0 +1,18 @@
+<div class="outerbook">
+  <img [src]=book?.src alt="logo"/>
+  <div class="innerbox">
+    <div class="subtitle1">{{book?.cardName}}</div>
+    <div class="cardAuth">{{book?.authorName}}</div>
+    <div class="row">
+        <div class="box">
+          <svg-icon src="../../assets/icons/time.svg"></svg-icon>
+          <span class="caption">{{book?.timeStamp}}</span>
+        </div>
+        <div class='box' *[ngIf]=book?.reads!=null>
+          <svg-icon src="../../assets/icons/user.svg"></svg-icon>
+          <span class="caption">{{book?.reads}}</span>
+        </div>
+    </div>
+    <button class="btn" >+ Add to library</button>
+  </div>
+</div>

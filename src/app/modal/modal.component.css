@@ -14,7 +14,7 @@
 }
 .modalheading {
   display: flex;
-  gap: 200px;
+  gap: 20%;
 }
 
 .h1popup {
@@ -34,7 +34,7 @@
 .h3popup {
   font-weight: 400;
   font-size: 16px;
-  line-height: 50px;
+  line-height: 25px;
   color: #6d787e;
   text-transform: none;
 }
@@ -48,5 +48,13 @@
   height: 100%;
   margin-top: 390px;
   background: rgba(157, 163, 166, 0.45);
+}
+.row{
+  display:grid;
+  gap: 25px;
+}
+.icontext{
+  display: flex;
+  gap: 10px;
 }
 

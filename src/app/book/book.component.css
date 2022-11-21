@@ -1,0 +1,65 @@
+.outerbook {
+  height: 466px;
+  width: 284px;
+  background: #ffffff;
+  border: 1px solid #e1ecfc;
+  border-radius: 8px;
+}
+.outerbook:hover{
+  background: #F1F6F4;
+}
+.subtitle1 {
+  font-weight: 700;
+  font-size: 17.8px;
+  line-height: 23px;
+  color: #03314b;
+  display: block;
+  text-transform: capitalize;
+  padding:20px 0px 0px 20px;
+}
+.cardAuth {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #6d787e;
+  display: block;
+  text-transform: none;
+  padding:17px 0px 0px 20px;
+}
+.box{
+  display: flex;
+  gap: 3px;
+}
+.caption {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #6d787e;
+  display: block;
+}
+.row {
+  display: flex;
+  gap: 3rem;
+  padding:16px 0px 0px 20px;
+}
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  width: 284px;
+  height: 52px;
+  color:#0365f2;
+  background-color: white;
+  cursor: pointer;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 20px;
+  border: 1px solid #e1ecfc;
+  border-radius: 0px 0px 8px 8px;
+}
+.btn:hover{
+  background: #0365f2;
+  color:#ffffff;
+}

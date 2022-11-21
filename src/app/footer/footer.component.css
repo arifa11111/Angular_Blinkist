@@ -6,11 +6,12 @@
   justify-content: center;
   align-items: flex-start;
   padding: 20px 24px 24px 242px;
+  margin-top: 100%;
   gap: 48px;
-  width: 100%;
+  width: 85%;
   height: 370px;
-  position: fixed;
-  bottom: 0;
+  position: absolute;
+  top:0;
 }
 .innerfoot{
   display: flex;

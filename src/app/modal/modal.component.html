@@ -7,14 +7,23 @@
       </div>
       <hr>
       <div class="sub" >
-        <div class="row">
-          <div class="h3popup" *ngFor="let text of row1">{{text}}</div>
+        <div class="row" >
+          <div class="icontext" *ngFor="let item of row1;let i=index" >
+            <svg-icon src={{item[0]}}></svg-icon>
+            <div class="h3popup" (click)="navFun(i)">{{item[1]}}</div>
+          </div>
         </div>
-        <div class="row">
-          <div class="h3popup" *ngFor="let text of row2">{{text}}</div>
+        <div class="row" >
+          <div class="icontext" *ngFor="let item of row2;">
+            <svg-icon src={{item[0]}}></svg-icon>
+            <div class="h3popup">{{item[1]}}</div>
+          </div>
         </div>
-        <div class="row">
-          <div class="h3popup" *ngFor="let text of row3">{{text}}</div>
+        <div class="row" >
+          <div class="icontext" *ngFor="let item of row3;">
+            <svg-icon src={{item[0]}}></svg-icon>
+            <div class="h3popup">{{item[1]}}</div>
+          </div>
         </div>
       </div>
     </div>
