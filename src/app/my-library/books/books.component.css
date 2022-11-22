@@ -1,0 +1,11 @@
+.book {
+  margin: 20px 15% 40px 0px;
+}
+.booklist {
+  width: 65%;
+  margin: 0px 15% 10% 15%;
+}
+
+.container {
+  display: flex;
+}

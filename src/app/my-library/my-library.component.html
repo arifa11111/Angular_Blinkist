@@ -4,7 +4,32 @@
       <h1 class="headstyle">{{heading}}</h1>
   </div>
   <div class="container">
-
+    <div class="tabcontainer">
+      <div class="tabs">
+        <div class="tab" (click)="onClick(1)" [class.onselect]="tab === 1">
+          Currently reading
+        </div>
+        <div class="tab" (click)="onClick(2)" [class.onselect]="tab === 2">
+          Finished
+        </div>
+      </div>
+      <span *ngIf="tab == 1" class="content booksContainer">
+        <ng-container  *ngFor="let book of currentlyReading">
+          <app-book class="book" [book]="book"
+          (click) = onBtnClick(book)
+          [btnText]="'finished'"
+          ></app-book>
+      </ng-container>
+      </span>
+      <span *ngIf="tab == 2" class="content booksContainer">
+        <ng-container  *ngFor="let book of finished">
+          <app-book class="book" [book]="book"
+          (click) = onBtnClick(book)
+          [btnText]="'read'"
+          ></app-book>
+      </ng-container>
+      </span>
+    </div>
   </div>
 </div>
 <app-footer></app-footer>

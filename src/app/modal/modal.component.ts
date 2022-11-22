@@ -9,7 +9,7 @@ import { AppConstants } from '../app.constants';
 })
 export class ModalComponent implements OnInit {
  
-  constructor( private router: Router, public constants : AppConstants) {}
+  constructor( private router: Router,public constants:AppConstants) {}
 
   navFun(i:number){
     if(i==0){

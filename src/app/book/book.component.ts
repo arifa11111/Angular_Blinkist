@@ -11,6 +11,8 @@ export class BookComponent implements OnInit {
 
   @Input() book:Book | undefined;
   @Input() index:number |undefined;
+  @Input()
+  btnText!: string;
 
   constructor(public constants:AppConstants){}
 

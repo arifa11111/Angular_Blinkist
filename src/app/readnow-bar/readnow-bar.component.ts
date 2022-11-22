@@ -9,7 +9,7 @@ import { AppConstants } from '../app.constants';
 export class ReadnowBarComponent implements OnInit {
 
 
-  constructor( public constants : AppConstants) { }
+  constructor(public constants:AppConstants) { }
 
   bookdetail() {
     throw new Error('Method not implemented.');
