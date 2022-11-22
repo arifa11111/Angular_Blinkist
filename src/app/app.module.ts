@@ -14,6 +14,7 @@ import { BookDetailComponent } from './book-detail/book-detail.component';
 import { FinishedBarComponent } from './finished-bar/finished-bar.component';
 import { ReadnowBarComponent } from './readnow-bar/readnow-bar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BannerComponent } from './banner/banner.component';
 
 @NgModule({
   declarations: [
@@ -24,13 +25,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ModalComponent,
     BookComponent,
     BookListComponent,
-<<<<<<< HEAD
     BookDetailComponent,
     FinishedBarComponent,
     ReadnowBarComponent,
-=======
     BannerComponent
->>>>>>> 9b05d48e2278e18c68015a84324f8ed3026c5022
   ],
   imports: [
     BrowserModule,
