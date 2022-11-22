@@ -11,10 +11,15 @@ import { FooterComponent } from './footer/footer.component';
 import { ModalComponent } from './modal/modal.component';
 import { BookComponent } from './book/book.component';
 import { BookListComponent } from './book-list/book-list.component';
+import { BookDetailComponent } from './book-detail/book-detail.component';
+import { FinishedBarComponent } from './finished-bar/finished-bar.component';
+import { ReadnowBarComponent } from './readnow-bar/readnow-bar.component';
+// import { MatTabsModule } from '@angular/material/tabs';
 import { BannerComponent } from './banner/banner.component';
 import { MyLibraryComponent } from './my-library/my-library.component';
 
 import { AppRoutingModule } from './app-routing.module';
+
 
 @NgModule({
   declarations: [
@@ -26,12 +31,14 @@ import { AppRoutingModule } from './app-routing.module';
     BookComponent,
     BookListComponent,
     BannerComponent,
-    MyLibraryComponent
+    MyLibraryComponent,
+    ReadnowBarComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule,
+
     AppRoutingModule,
+
     BrowserAnimationsModule,
     AngularSvgIconModule.forRoot()
   ],

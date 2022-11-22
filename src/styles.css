@@ -1,9 +1,12 @@
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+
 @font-face {
   font-family: 'Cera Pro';
-  src: url("assets/font/cerapro-regular.otf");
+  src: url("assets/font/cera-pro-regular.otf");
 }
 
 *{
   font-family: 'Cera pro';
   font-style: normal;
 }
+
