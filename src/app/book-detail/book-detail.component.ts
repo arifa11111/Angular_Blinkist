@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ThemePalette } from '@angular/material';
 import { AppConstants } from '../app.constants';
 
 @Component({
@@ -9,12 +8,15 @@ import { AppConstants } from '../app.constants';
 })
 export class BookDetailComponent implements OnInit {
 
+  constructor(public constants:AppConstants) {
+    console.log(constants.bookList)
+   }
 
-  constructor(public constants:AppConstants) { }
+  tab: number = 1;
 
-  links = ['Synopsis', 'Who is it for?', 'About the author'];
-  activeLink = this.links[0];
-
+  onClick(arg0: number) {
+    this.tab=arg0;
+    }
 
     finish() {
       console.log("finished")
