@@ -14,6 +14,7 @@ import { FinishedBarComponent } from './finished-bar/finished-bar.component';
 import { ReadnowBarComponent } from './readnow-bar/readnow-bar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTabsModule } from '@angular/material/tabs';
+import { BannerComponent } from './banner/banner.component';
 
 
 @NgModule({
@@ -28,7 +29,7 @@ import { MatTabsModule } from '@angular/material/tabs';
     BookDetailComponent,
     FinishedBarComponent,
     ReadnowBarComponent,
-
+    BannerComponent
   ],
   imports: [
     BrowserModule,
