@@ -1,25 +1,61 @@
-<div class="outercontainer">
-  <div class="sub1">
-    <div class="font1">{{constants.bookDetail[0]}}</div>
-    <div class="font2">Beyond Entrepreneurship 2.0</div>
-    <div class="font3">Turning Your Business into an Enduring Great Company</div>
-    <div class="font4">By Jim Collins and Bill Lazier</div>
-    <div class="icon">
-      <svg-icon src={{constants.sources[0]}}></svg-icon>
-      <div class="font5">15-minute read</div>
+<div class="container">
+  <div class="outercontainer">
+    <div class="sub1">
+      <div class="font1">{{ constants.bookDetail[0] }}</div>
+      <div class="font2">Beyond Entrepreneurship 2.0</div>
+      <div class="font3">
+        Turning Your Business into an Enduring Great Company
+      </div>
+      <div class="font4">By Jim Collins and Bill Lazier</div>
+      <div class="icon">
+        <svg-icon src="{{ constants.sources[0] }}"></svg-icon>
+        <div class="font5">15-minute read</div>
+      </div>
+      <div class="btn">
+        <button class="btn1" (click)="readNow()">
+          {{ constants.bookDetail[1] }}
+        </button>
+        <button class="btn2" (click)="finish()">
+          {{ constants.bookDetail[2] }}
+        </button>
+        <button class="btn3">
+          {{ constants.bookDetail[3] }}
+          <svg-icon src="../../assets/icons/right-arrow.svg"></svg-icon>
+        </button>
+      </div>
     </div>
-    <div class="btn">
-      <button class="btn1" (click)="readNow()">{{constants.bookDetail[1]}}</button>
-      <button class="btn2" (click)="finish()">{{constants.bookDetail[2]}}</button>
-      <button class="btn3">{{constants.bookDetail[3]}} <svg-icon src="../../assets/icons/right-arrow.svg"></svg-icon> </button>
+    <div class="sub2">
+      <img src="{{ constants.sources[2] }}" alt="poster" />
     </div>
   </div>
-  <div class="sub2">
-    <img src={{constants.sources[2]}} alt="poster">
-  </div>
+  <div class="tabcontainer">
+    <div class="tabs">
+      <div class="tab" (click)="onClick(1)" [class.onselect]="tab === 1">
+        {{ constants.tabs[0] }}
+      </div>
+      <div class="tab" (click)="onClick(2)" [class.onselect]="tab === 2">
+        {{ constants.tabs[1] }}
+      </div>
+      <div class="tab" (click)="onClick(3)" [class.onselect]="tab === 3">
+        {{ constants.tabs[2] }}
+      </div>
+    </div>
+    <span *ngIf="tab == 1" class="content">{{
+      constants.bookList[0].cardName +
+        constants.content1[0] +
+        constants.bookList[0].authorName +
+        constants.content1[1]
+    }}</span>
 
+    <span *ngIf="tab == 2" class="content">{{ constants.content1[2] }}</span>
+    <span *ngIf="tab == 3" class="content">{{
+      constants.bookList[0].authorName
+    }}</span>
+  </div>
 </div>
-<hr class="hr">
 
 
 
+
+
+<hr class="hr" />
