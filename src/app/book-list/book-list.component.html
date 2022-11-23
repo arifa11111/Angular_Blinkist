@@ -1,34 +1,46 @@
-<div class="booklist">
+<div class="booklist" >
+
   <div class="row">
-    <div class="blinks">{{constants.booklist[0]}}</div>
-    <div class="container">
-      <ng-container  *ngFor="let book of constants.bookList"let i="index">
-          <app-book class="book" [book]="book"
-                *ngIf="book.audio && book.just==false"
-          ></app-book>
+    <div class="filter" *ngIf="constants.searchItem">
+      <ng-container  *ngFor="let book of constants.bookList | filter:constants.searchItem">
+          <app-book class="bookfilter" [book]="book"></app-book>
       </ng-container>
     </div>
   </div>
-  <div class="row">
-    <div class="blinks">{{constants.booklist[1]}}</div>
-    <div class="container">
-      <ng-container  *ngFor="let book of constants.bookList"let i="index">
-          <app-book class="book" [book]="book"
-                *ngIf="book.just==true"
-          ></app-book>
-      </ng-container>
+
+
+  <ng-container *ngIf="constants.searchItem==''">
+    <div class="row">
+      <div class="blinks">{{constants.booklist[0]}}</div>
+      <div class="container">
+        <ng-container  *ngFor="let book of constants.bookList">
+            <app-book class="book" [book]="book"
+                  *ngIf="book.audio==false && book.just==false"
+            ></app-book>
+        </ng-container>
+      </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="blinks">{{constants.booklist[2]}}</div>
-    <div class="container">
-      <ng-container  *ngFor="let book of constants.bookList"let i="index">
-          <app-book class="book" [book]="book"
-                *ngIf="book.audio==true"
-          ></app-book>
-      </ng-container>
+    <div class="row">
+      <div class="blinks">{{constants.booklist[1]}}</div>
+      <div class="container">
+        <ng-container  *ngFor="let book of constants.bookList">
+            <app-book class="book" [book]="book"
+                  *ngIf="book.just==true"
+            ></app-book>
+        </ng-container>
+      </div>
     </div>
-  </div>
+    <div class="row">
+      <div class="blinks">{{constants.booklist[2]}}</div>
+      <div class="container">
+        <ng-container  *ngFor="let book of constants.bookList">
+            <app-book class="book" [book]="book"
+                  *ngIf="book.audio==true"
+            ></app-book>
+        </ng-container>
+      </div>
+    </div>
+  </ng-container>
 </div>
 
 

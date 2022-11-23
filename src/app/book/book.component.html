@@ -1,4 +1,4 @@
-<div class="outerbook">
+<div class="outerbook" #piece>
   <img [src]=book?.src alt="logo"/>
   <div class="innerbox">
     <div class="subtitle1">{{book?.cardName}}</div>
@@ -13,6 +13,6 @@
           <span class="caption">{{book?.reads}}</span>
         </div>
     </div>
-    <button class="btn" >{{constants.libraryBtn}}</button>
+   <button class="btn" routerLink="/bookdetails" (click)="addToLibrary(book?.id)">{{constants.libraryBtn}}</button>
   </div>
 </div>

@@ -1,0 +1,39 @@
+.search::placeholder {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #6d787e;
+}
+.search{
+  border: none;
+  width: 658px;
+  height: 46px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+
+}
+.search:focus{
+  outline: none;
+}
+.home{
+  display: grid;
+}
+.banner{
+  margin-bottom: 3rem;
+}
+.icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:10px 5px 0px 0px;
+}
+.bar{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0px 0px 4rem 270px;
+  border-bottom:2px solid black;
+  width: 658px;
+}
+

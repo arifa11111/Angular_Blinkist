@@ -9,7 +9,7 @@ import { AppConstants } from '../app.constants';
 export class BookDetailComponent implements OnInit {
 
   constructor(public constants:AppConstants) {
-    console.log(constants.bookList)
+    // console.log(constants.bookList)
    }
 
   tab: number = 1;

@@ -7,9 +7,13 @@
   background: #f1f6f4;
   width: 100%;
   height: 398px;
+  margin-top: 90px;
+  z-index: 10;
 }
 .innermodel {
   height: 350px;
+  opacity: 1;
+  background: #f1f6f4;
   margin: 30px 250px 10px 250px;
 }
 .modalheading {
@@ -43,18 +47,18 @@
   gap: 20%;
 }
 .modal {
+  z-index: 20;
   position: absolute;
   width: 100%;
-  height: 150%;
-  margin-top: 390px;
+  height: 241%;
+  margin-top: 350px;
   background: rgba(157, 163, 166, 0.45);
 }
-.row{
-  display:grid;
+.row {
+  display: grid;
   gap: 25px;
 }
-.icontext{
+.icontext {
   display: flex;
   gap: 10px;
 }
-

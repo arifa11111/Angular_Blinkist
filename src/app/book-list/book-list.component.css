@@ -1,8 +1,11 @@
 .book {
   margin: 20px 15% 40px 0px;
 }
+.bookfilter{
+  margin: 20px 11.8rem 40px 0px;
+}
 .booklist {
-  width: 65%;
+  width: 78%;
   margin: 0px 15% 10% 15%;
 }
 
@@ -15,4 +18,8 @@
   font-size: 24px;
   line-height: 30px;
   color: #03314b;
+}
+.filter{
+  flex-wrap: wrap;
+  display: flex;
 }

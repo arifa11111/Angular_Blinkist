@@ -2,11 +2,11 @@
   <div class="outercontainer">
     <div class="sub1">
       <div class="font1">{{ constants.bookDetail[0] }}</div>
-      <div class="font2">Beyond Entrepreneurship 2.0</div>
+      <div class="font2">{{constants.bookList[constants.id].cardName}}</div>
       <div class="font3">
         Turning Your Business into an Enduring Great Company
       </div>
-      <div class="font4">By Jim Collins and Bill Lazier</div>
+      <div class="font4">{{constants.bookList[constants.id].authorName}}</div>
       <div class="icon">
         <svg-icon src="{{ constants.sources[0] }}"></svg-icon>
         <div class="font5">15-minute read</div>
@@ -25,7 +25,7 @@
       </div>
     </div>
     <div class="sub2">
-      <img src="{{ constants.sources[2] }}" alt="poster" />
+      <img src="{{constants.bookList[constants.id].src}}" alt="poster" />
     </div>
   </div>
   <div class="tabcontainer">
@@ -41,21 +41,22 @@
       </div>
     </div>
     <span *ngIf="tab == 1" class="content">{{
-      constants.bookList[0].cardName +
+      constants.bookList[constants.id].cardName +
         constants.content1[0] +
-        constants.bookList[0].authorName +
+        constants.bookList[constants.id].authorName +
         constants.content1[1]
     }}</span>
 
     <span *ngIf="tab == 2" class="content">{{ constants.content1[2] }}</span>
     <span *ngIf="tab == 3" class="content">{{
-      constants.bookList[0].authorName
+      constants.bookList[constants.id].authorName
     }}</span>
   </div>
+  <hr class="hr" />
 </div>
 
 
 
 
 
-<hr class="hr" />
+

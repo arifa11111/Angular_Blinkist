@@ -66,6 +66,9 @@ export class AppConstants {
     '../../assets/icons/time.svg',
     '../../assets/icons/user.svg',
     '../../assets/icons/bigboss.svg',
+    "../../assets/icons/search.svg",
+    "../../assets/icons/down-arrow.svg",
+    "../../assets/icons/avatar.svg",
   ];
   content1 = [
     ' (2020) updates ',
@@ -74,5 +77,8 @@ export class AppConstants {
   ];
   tabs = ['Synopsis', 'Who is it for?', 'About the author'];
 
-  bookList: Book[] = [];
+  bookList: Book[]=[];
+  modal=0;
+  id:number=0;
+  searchItem = 'Eat Better, Feel Better';
 }

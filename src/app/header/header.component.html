@@ -3,23 +3,25 @@
     <div class="mainContainer">
       <app-logo></app-logo>
       <div role="icon" class="center pointer">
-        <img src="../../assets/icons/search.svg" alt="search" />
+        <img src={{constants.sources[3]}} alt="svg" />
       </div>
       <div class="exploreDiv">
-        <div class="center pointer">Explore</div>
+        <div class="center pointer" (click)="dropDown()">Explore</div>
         <div class="center pointer">
-          <img src="../../assets/icons/down-arrow.svg" />
+          <img src={{constants.sources[4]}} alt="svg"/>
         </div>
       </div>
-      <div class="library body1">My Library</div>
+      <div class="library body1" routerLink="/library">My Library</div>
     </div>
     <div class="exploreDiv">
       <div>
-        <img src="../../assets/icons/avatar.svg" />
+        <img src={{constants.sources[5]}} alt="svg" />
       </div>
-      <div>
-        <img src="../../assets/icons/down-arrow.svg" class="downArrow" />
+      <div class="arrow">
+        <img src={{constants.sources[4]}} class="downArrow" alt="svg"/>
       </div>
     </div>
   </div>
 </div>
+
+<app-modal #modal *ngIf="constants.modal==1"></app-modal>
