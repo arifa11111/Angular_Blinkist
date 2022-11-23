@@ -8,22 +8,13 @@ import { AppConstants } from '../app.constants';
 })
 export class BookDetailComponent implements OnInit {
 
-  constructor(public constants:AppConstants) {
-    console.log(constants.bookList)
-   }
+  constructor(public constants:AppConstants) {}
 
   tab: number = 1;
 
-  onClick(arg0: number) {
-    this.tab=arg0;
-    }
-
-    finish() {
-      console.log("finished")
-    }
-    readNow() {
-      console.log("readNow")
-    }
+  onClick(index: number) {
+    this.tab=index;
+  }
 
   ngOnInit(): void {
   }

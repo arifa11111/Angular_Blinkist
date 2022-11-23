@@ -1,4 +1,5 @@
 export class Book {
+  [x: string]: any;
   public id: number | undefined;
   public audio: boolean | undefined;
   public authorName: string | undefined;

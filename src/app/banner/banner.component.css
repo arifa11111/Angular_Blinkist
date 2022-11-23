@@ -18,9 +18,10 @@
   background-color: #F1F6F4;
   display: flex;
   margin: 0 auto;
-  gap: 112px;
-  width: 912px;
+  gap: 30%;
+  width: 1300px;
   height: 264px;
+  justify-content: center;
 }
 
 .leftContainer {
@@ -29,7 +30,6 @@
   bottom: 45px;
   top: 45px;
   position: relative;
-  left: 45px;
   gap: 15px;
 }
 

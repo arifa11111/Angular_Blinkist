@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { AppConstants } from '../app.constants';
-import { BookService } from './book-list.service';
+import { FilterPipe } from '../filter.pipe';
 
 @Component({
   selector: 'app-book-list',
@@ -8,12 +8,13 @@ import { BookService } from './book-list.service';
   styleUrls: ['./book-list.component.css'],
 })
 export class BookListComponent implements OnInit {
-  constructor(
-    public constants: AppConstants,
-    private bookService: BookService
-  ) {
-    this.bookService.fetchBooks();
+
+
+  constructor(public constants: AppConstants) {
   }
+
+
+
 
   ngOnInit(): void {}
 }

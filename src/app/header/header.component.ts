@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AppConstants } from '../app.constants';
+import { ModalComponent } from '../modal/modal.component';
 
 @Component({
   selector: 'app-header',
@@ -7,7 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+
+  constructor(public constants:AppConstants) { }
+
+  dropDown() {
+  this.constants.modal = this.constants.modal ? 0 : 1;
+    }
+    
 
   ngOnInit(): void {
   }

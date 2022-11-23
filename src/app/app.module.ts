@@ -15,6 +15,10 @@ import { ReadnowBarComponent } from './readnow-bar/readnow-bar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTabsModule } from '@angular/material/tabs';
 import { BannerComponent } from './banner/banner.component';
+import { AppRoutingModule } from './app-routing.module';
+import { HomeComponentComponent } from './home-component/home-component.component';
+import { FormsModule } from '@angular/forms';
+import { FilterPipe } from './filter.pipe';
 
 
 @NgModule({
@@ -29,13 +33,17 @@ import { BannerComponent } from './banner/banner.component';
     BookDetailComponent,
     FinishedBarComponent,
     ReadnowBarComponent,
-    BannerComponent
+    BannerComponent,
+    HomeComponentComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     HttpClientModule,
     MatTabsModule,
     BrowserAnimationsModule,
+    AppRoutingModule,
     AngularSvgIconModule.forRoot()
   ],
   providers: [],

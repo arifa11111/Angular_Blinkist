@@ -9,12 +9,16 @@ import { Book } from './book.model';
 })
 export class BookComponent implements OnInit {
 
+
   @Input() book:Book | undefined;
-  @Input() index:number |undefined;
 
-  constructor(public constants:AppConstants){}
+  constructor(public constants:AppConstants) {}
 
-
+  addToLibrary(id:number|undefined) {
+      if(id!==undefined){
+      this.constants.id=id-1;
+      }
+    }
 
   ngOnInit(): void {
   }

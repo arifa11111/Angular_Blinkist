@@ -2,12 +2,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 19rem;
+  gap: 30rem;
   width: 60%;
-  margin: 100px 0px 0px 365px;
+  margin: 10px 0px 0rem 350px;
 }
 .tabcontainer{
-  margin: 50px 0px 0px 365px;
+  margin: 10px 0px 0rem 270px;
+}
+.container{
+  margin-bottom: 5rem;
 }
 
 .icon {
@@ -17,10 +20,11 @@
   bottom: 3.5rem;
 }
 .sub1 {
-  height: 25rem;
+  height: 23rem;
   display: grid;
   justify-content: flex-start;
   align-items: center;
+  margin-bottom: 3rem;
 }
 .sub2 {
   display: flex;
@@ -41,6 +45,7 @@
   color: #03314b;
 }
 .font3 {
+  width: 32rem !important;
   font-weight: 400;
   font-size: 20px;
   line-height: 25px;
@@ -99,8 +104,9 @@
   border: transparent;
 }
 .hr {
-  width: 60%;
-  margin-top: 50px;
+  width: 70%;
+  margin-top: 7%;
+  margin-bottom: 10%;
   border: 1px solid #e1ecfc;
 }
 .tabs {
