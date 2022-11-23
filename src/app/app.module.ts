@@ -15,10 +15,11 @@ import { ReadnowBarComponent } from './readnow-bar/readnow-bar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BannerComponent } from './banner/banner.component';
 import { MyLibraryComponent } from './my-library/my-library.component';
-
 import { AppRoutingModule } from './app-routing.module';
 import { BooksComponent } from './my-library/books/books.component';
-
+import { HomeComponentComponent } from './home-component/home-component.component';
+import { FormsModule } from '@angular/forms';
+import { FilterPipe } from './filter.pipe';
 
 
 @NgModule({
@@ -35,12 +36,16 @@ import { BooksComponent } from './my-library/books/books.component';
     ReadnowBarComponent,
     BannerComponent,
     MyLibraryComponent,
-    BooksComponent
+    BooksComponent,
+    HomeComponentComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    AppRoutingModule,
     AngularSvgIconModule.forRoot()
   ],
   providers: [],

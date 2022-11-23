@@ -1,20 +1,27 @@
 <div class="outerbook">
-  <img [src]=book?.src alt="logo"/>
+  <img [src]="book?.src" alt="logo" />
   <div class="innerbox">
-    <div class="subtitle1">{{book?.cardName}}</div>
-    <div class="cardAuth">{{book?.authorName}}</div>
+    <div class="subtitle1">{{ book?.cardName }}</div>
+    <div class="cardAuth">{{ book?.authorName }}</div>
     <div class="row">
-        <div class="box">
-          <svg-icon src={{constants.sources[0]}} ></svg-icon>
-          <span class="caption">{{book?.timeStamp}}</span>
-        </div>
-        <div class='box' *ngIf=book?.reads>
-          <svg-icon src={{constants.sources[1]}}></svg-icon>
-          <span class="caption">{{book?.reads}}</span>
-        </div>
+      <div class="box">
+        <svg-icon src="{{ constants.sources[0] }}"></svg-icon>
+        <span class="caption">{{ book?.timeStamp }}</span>
+      </div>
+      <div class="box" *ngIf="book?.reads">
+        <svg-icon src="{{ constants.sources[1] }}"></svg-icon>
+        <span class="caption">{{ book?.reads }}</span>
+      </div>
     </div>
     <button class="btn" *ngIf="btnText == 'library'">{{constants.libraryBtn[0]}}</button>
     <button class="btn" *ngIf="btnText == 'read'">{{constants.libraryBtn[1]}}</button>
     <button class="btn" *ngIf="btnText == 'finished'">{{constants.libraryBtn[2]}}</button>
+    <button
+      class="btn"
+      routerLink="/bookdetails"
+      (click)="addToLibrary(book?.id)"
+    >
+      {{ constants.libraryBtn }}
+    </button>
   </div>
 </div>

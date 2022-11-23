@@ -9,6 +9,7 @@ import { BookService } from './book-list/book-list.service';
 })
 export class AppComponent {
   title = 'Blinkist_Angular';
+
   constructor(
     public constants: AppConstants,
     private bookService: BookService

@@ -14,9 +14,15 @@ export class BookComponent implements OnInit {
   @Input()
   btnText!: string;
 
-  constructor(public constants:AppConstants){}
+  @Input() book:Book | undefined;
 
+  constructor(public constants:AppConstants) {}
 
+  addToLibrary(id:number|undefined) {
+      if(id!==undefined){
+      this.constants.id=id-1;
+      }
+    }
 
   ngOnInit(): void {
   }
