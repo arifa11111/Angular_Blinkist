@@ -14,6 +14,7 @@ export class AppConstants {
     'Read now',
     'Finished Reading',
     'Send to kindle',
+    'Turning Your Business into an Enduring Great Company'
   ];
   details = [
     '../../assets/icons/logo.png',
@@ -69,6 +70,7 @@ export class AppConstants {
     "../../assets/icons/search.svg",
     "../../assets/icons/down-arrow.svg",
     "../../assets/icons/avatar.svg",
+    "../../assets/icons/right-arrow.svg"
   ];
   content1 = [
     ' (2020) updates ',

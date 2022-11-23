@@ -2,30 +2,30 @@
   <div class="outercontainer">
     <div class="sub1">
       <div class="font1">{{ constants.bookDetail[0] }}</div>
-      <div class="font2">{{constants.bookList[constants.id].cardName}}</div>
-      <div class="font3">
-        Turning Your Business into an Enduring Great Company
-      </div>
-      <div class="font4">{{constants.bookList[constants.id].authorName}}</div>
+      <div class="font2">{{ constants.bookList[constants.id].cardName }}</div>
+      <div class="font3">{{ constants.bookDetail[4] }}</div>
+      <div class="font4">{{ constants.bookList[constants.id].authorName }}</div>
       <div class="icon">
         <svg-icon src="{{ constants.sources[0] }}"></svg-icon>
-        <div class="font5">15-minute read</div>
+        <div class="font5">
+          {{ constants.bookList[constants.id].timeStamp }}
+        </div>
       </div>
       <div class="btn">
-        <button class="btn1" (click)="readNow()">
+        <button class="btn1">
           {{ constants.bookDetail[1] }}
         </button>
-        <button class="btn2" (click)="finish()">
+        <button class="btn2">
           {{ constants.bookDetail[2] }}
         </button>
         <button class="btn3">
           {{ constants.bookDetail[3] }}
-          <svg-icon src="../../assets/icons/right-arrow.svg"></svg-icon>
+          <svg-icon src="{{ constants.sources[6] }}"></svg-icon>
         </button>
       </div>
     </div>
     <div class="sub2">
-      <img src="{{constants.bookList[constants.id].src}}" alt="poster" />
+      <img src="{{ constants.bookList[constants.id].src }}" alt="poster" />
     </div>
   </div>
   <div class="tabcontainer">
@@ -54,9 +54,3 @@
   </div>
   <hr class="hr" />
 </div>
-
-
-
-
-
-

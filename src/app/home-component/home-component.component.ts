@@ -11,12 +11,6 @@ export class HomeComponentComponent implements OnInit {
   constructor(public constants:AppConstants) {
   }
 
-
-  Item(){
-    console.log(this.constants.searchItem)
-  }
-
-
   ngOnInit(): void {
   }
 

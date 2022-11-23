@@ -7,7 +7,6 @@ import { ModalComponent } from './modal/modal.component';
 
 const appRoutes: Routes = [
   { path: '' ,component:HomeComponentComponent},
-  // { path: '/library' ,component:LibraryComponent},
   { path: 'bookdetails' ,component:BookDetailComponent},
   { path: 'dropdown' ,component:ModalComponent},
 ];

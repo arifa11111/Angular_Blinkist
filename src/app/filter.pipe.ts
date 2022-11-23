@@ -10,14 +10,6 @@ export class FilterPipe implements PipeTransform {
     const resultArray: Book[] = [];
 
     for (let item of value) {
-      console.log(item.cardName);
-
-      console.log(
-        item.id,
-        item?.cardName,
-        item.cardName.includes(filterString)
-      );
-
       if (
         item?.cardName.toLowerCase().includes(filterString.toLowerCase()) ||
         item?.authorName.toLowerCase().includes(filterString.toLowerCase())

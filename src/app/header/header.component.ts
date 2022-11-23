@@ -15,10 +15,7 @@ export class HeaderComponent implements OnInit {
   dropDown() {
   this.constants.modal = this.constants.modal ? 0 : 1;
     }
-
-  library() {
-    console.log("library")
-    }
+    
 
   ngOnInit(): void {
   }
