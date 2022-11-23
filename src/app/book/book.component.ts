@@ -9,6 +9,10 @@ import { Book } from './book.model';
 })
 export class BookComponent implements OnInit {
 
+  @Input() book:Book | undefined;
+  @Input() index:number |undefined;
+  @Input()
+  btnText!: string;
 
   @Input() book:Book | undefined;
 

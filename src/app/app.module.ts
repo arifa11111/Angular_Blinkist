@@ -13,9 +13,10 @@ import { BookDetailComponent } from './book-detail/book-detail.component';
 import { FinishedBarComponent } from './finished-bar/finished-bar.component';
 import { ReadnowBarComponent } from './readnow-bar/readnow-bar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatTabsModule } from '@angular/material/tabs';
 import { BannerComponent } from './banner/banner.component';
+import { MyLibraryComponent } from './my-library/my-library.component';
 import { AppRoutingModule } from './app-routing.module';
+import { BooksComponent } from './my-library/books/books.component';
 import { HomeComponentComponent } from './home-component/home-component.component';
 import { FormsModule } from '@angular/forms';
 import { FilterPipe } from './filter.pipe';
@@ -34,6 +35,8 @@ import { FilterPipe } from './filter.pipe';
     FinishedBarComponent,
     ReadnowBarComponent,
     BannerComponent,
+    MyLibraryComponent,
+    BooksComponent,
     HomeComponentComponent,
     FilterPipe
   ],
@@ -41,7 +44,6 @@ import { FilterPipe } from './filter.pipe';
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    MatTabsModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     AngularSvgIconModule.forRoot()

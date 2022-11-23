@@ -13,6 +13,9 @@
         <span class="caption">{{ book?.reads }}</span>
       </div>
     </div>
+    <button class="btn" *ngIf="btnText == 'library'">{{constants.libraryBtn[0]}}</button>
+    <button class="btn" *ngIf="btnText == 'read'">{{constants.libraryBtn[1]}}</button>
+    <button class="btn" *ngIf="btnText == 'finished'">{{constants.libraryBtn[2]}}</button>
     <button
       class="btn"
       routerLink="/bookdetails"

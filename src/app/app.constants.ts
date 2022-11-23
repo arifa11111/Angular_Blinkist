@@ -7,7 +7,7 @@ import { Book } from './book/book.model';
 export class AppConstants {
   readAgain = 'Read again';
   finished = 'Finished';
-  libraryBtn = '+ Add to library';
+  libraryBtn = ['+ Add to library','Read again','Finished'];
   booklist = ['Trending blinks', 'Just added', 'Featured audio blinks'];
   bookDetail = [
     'Get the key ideas from',
@@ -77,7 +77,7 @@ export class AppConstants {
     ' essential 1992 business handbook, Beyond Entrepreneurship for the entrepreneurs, visionaries, and innovators of today. This new edition combines the timeless business advice and strategy of the original text, supplemented with cutting-edge insights and case studies pertinent to today’s business world.',
     'any one who are interested in Entrepreneurship',
   ];
-  tabs = ['Synopsis', 'Who is it for?', 'About the author'];
+  tabs = ['Synopsis', 'Who is it for?', 'About the author','Currently reading','Finished'];
 
   bookList: Book[]=[];
   modal=0;
