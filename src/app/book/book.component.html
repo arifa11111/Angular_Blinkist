@@ -13,8 +13,8 @@
           <span class="caption">{{book?.reads}}</span>
         </div>
     </div>
-    <button class="btn" *ngIf="btnText == 'library'">{{constants.libraryBtn}}</button>
-    <button class="btn" *ngIf="btnText == 'read'">Read again</button>
-    <button class="btn" *ngIf="btnText == 'finished'">Finished</button>
+    <button class="btn" *ngIf="btnText == 'library'">{{constants.libraryBtn[0]}}</button>
+    <button class="btn" *ngIf="btnText == 'read'">{{constants.libraryBtn[1]}}</button>
+    <button class="btn" *ngIf="btnText == 'finished'">{{constants.libraryBtn[2]}}</button>
   </div>
 </div>

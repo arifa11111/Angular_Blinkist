@@ -7,10 +7,10 @@
     <div class="tabcontainer">
       <div class="tabs">
         <div class="tab" (click)="onClick(1)" [class.onselect]="tab === 1">
-          Currently reading
+          {{constants.tabs[3]}}
         </div>
         <div class="tab" (click)="onClick(2)" [class.onselect]="tab === 2">
-          Finished
+          {{constants.tabs[4]}}
         </div>
       </div>
       <span *ngIf="tab == 1" class="content booksContainer">

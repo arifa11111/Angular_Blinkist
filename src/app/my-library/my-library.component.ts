@@ -1,4 +1,5 @@
-import { Component, DoCheck, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import { Component, DoCheck, OnInit } from '@angular/core';
+import { AppConstants } from '../app.constants';
 import { Book } from '../book/book.model';
 import { BookDataService } from '../shared/book-data.service';
 
@@ -9,7 +10,7 @@ import { BookDataService } from '../shared/book-data.service';
 })
 export class MyLibraryComponent implements OnInit, DoCheck {
   heading: string = 'My Library';
-  constructor(private bookService: BookDataService) {}
+  constructor(private bookService: BookDataService,public constants:AppConstants) {}
 
   ngDoCheck(): void {
   }
@@ -18,8 +19,8 @@ export class MyLibraryComponent implements OnInit, DoCheck {
   currentlyReading : Book[] = [];
   finished : Book[] = [];
 
-  onClick(arg0: number) {
-    this.tab = arg0;
+  onClick(index: number) {
+    this.tab = index;
   }
 
   getCurrentReadBooks() {
