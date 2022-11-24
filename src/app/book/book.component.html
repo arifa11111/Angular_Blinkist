@@ -13,15 +13,15 @@
         <span class="caption">{{ book?.reads }}</span>
       </div>
     </div>
-    <button class="btn" *ngIf="btnText == 'library'">{{constants.libraryBtn[0]}}</button>
-    <button class="btn" *ngIf="btnText == 'read'">{{constants.libraryBtn[1]}}</button>
-    <button class="btn" *ngIf="btnText == 'finished'">{{constants.libraryBtn[2]}}</button>
+    <app-readnow-bar *ngIf="btnText == 'read'"></app-readnow-bar>
+    <app-finished-bar *ngIf="btnText == 'finished'"></app-finished-bar>
     <button
       class="btn"
+      *ngIf="btnText != 'read' && btnText !='finished'"
       routerLink="/bookdetails"
       (click)="addToLibrary(book?.id)"
     >
-      {{ constants.libraryBtn }}
+      {{ constants.libraryBtn[0] }}
     </button>
   </div>
 </div>

@@ -8,8 +8,9 @@
   gap: 48px;
   width: 85%;
   height: 370px;
-  position: relative;
+  position: sticky;
   bottom: 0;
+  top:100%;
   z-index: 1;
 }
 .innerfoot {

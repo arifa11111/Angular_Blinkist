@@ -22,8 +22,7 @@
   justify-content: flex-start;
   width: 500px;
 }
-.tabcontainer{
-}
+
 .tabs {
   display: flex;
   cursor: pointer;
@@ -53,4 +52,6 @@
   flex-wrap: wrap;
   width: 100%;
   gap: 55px;
+  height: 300%;
+  margin-bottom: 20rem;
 }

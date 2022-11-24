@@ -8,11 +8,9 @@ import { BookDataService } from '../shared/book-data.service';
   templateUrl: './my-library.component.html',
   styleUrls: ['./my-library.component.css'],
 })
-export class MyLibraryComponent implements OnInit, DoCheck {
+export class MyLibraryComponent implements OnInit{
   heading: string = 'My Library';
-  constructor(private bookService: BookDataService,public constants:AppConstants) {}
-
-  ngDoCheck(): void {
+  constructor(private bookService: BookDataService,public constants:AppConstants) {
   }
 
   tab: number = 1;
@@ -25,7 +23,8 @@ export class MyLibraryComponent implements OnInit, DoCheck {
 
   getCurrentReadBooks() {
     this.bookService.fetchBooks().subscribe(books => {
-      return books.filter(item => item.isread == true)
+      return books
+      .filter(item => item.status == 'reading')
       .map(book => {
         this.currentlyReading.push(book)
       })
@@ -36,8 +35,9 @@ export class MyLibraryComponent implements OnInit, DoCheck {
 
   getFinishedBooks(){
     this.bookService.fetchBooks().subscribe(books => {
-      return books.filter(item => item.isread == false)
+      return books.filter(item => item.status == 'finished')
       .map(book => {
+        console.log(book.status)
         this.finished.push(book)
       })
     });

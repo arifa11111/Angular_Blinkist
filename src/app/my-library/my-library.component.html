@@ -1,5 +1,4 @@
 <div class="mainContainer">
-  <app-header></app-header>
   <div class="container">
       <h1 class="headstyle">{{heading}}</h1>
   </div>
@@ -19,7 +18,7 @@
           (click) = onBtnClick(book)
           [btnText]="'finished'"
           ></app-book>
-      </ng-container>
+        </ng-container>
       </span>
       <span *ngIf="tab == 2" class="content booksContainer">
         <ng-container  *ngFor="let book of finished">
@@ -27,9 +26,8 @@
           (click) = onBtnClick(book)
           [btnText]="'read'"
           ></app-book>
-      </ng-container>
+        </ng-container>
       </span>
     </div>
   </div>
 </div>
-<app-footer></app-footer>

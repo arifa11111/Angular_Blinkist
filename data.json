@@ -8,9 +8,7 @@
       "id": 1,
       "isread": false,
       "reads": "",
-      "status ": false,
-      "startedBook": false,
-      "startedread": false,
+      "status": "finished",
       "just": false,
       "audio": false
     },
@@ -22,11 +20,9 @@
       "id": 2,
       "isread": true,
       "reads": "1.9k reads",
-      "status ": false,
-      "startedBook": false,
+      "status": "reading",
       "just": false,
-      "audio": true,
-      "startedread": false
+      "audio": true
     },
 
     {
@@ -37,10 +33,8 @@
       "id": 3,
       "isread": false,
       "reads": "",
-      "status ": false,
-      "startedBook": false,
+      "status": "",
       "just": false,
-      "startedread": false,
       "audio": true
     },
     {
@@ -51,10 +45,8 @@
       "id": 4,
       "isread": false,
       "reads": "1.9k reads",
-      "status ": false,
-      "startedBook": false,
+      "status": "",
       "just": false,
-      "startedread": false,
       "audio": true
     },
     {
@@ -65,10 +57,8 @@
       "id": 5,
       "isread": false,
       "reads": "",
-      "status ": false,
-      "startedBook": false,
+      "status": "",
       "just": false,
-      "startedread": false,
       "audio": false
     },
 
@@ -80,10 +70,8 @@
       "id": 6,
       "isread": false,
       "reads": "",
-      "status ": false,
-      "startedBook": false,
+      "status": "",
       "just": false,
-      "startedread": false,
       "audio": false
     },
 
@@ -95,10 +83,8 @@
       "id": 7,
       "isread": false,
       "reads": "",
-      "status ": false,
-      "startedBook": false,
+      "status": "",
       "just": true,
-      "startedread": false,
       "audio": false
     },
     {
@@ -109,10 +95,8 @@
       "id": 8,
       "isread": false,
       "reads": "1.9k reads",
-      "status ": false,
-      "startedBook": false,
+      "status": "",
       "just": true,
-      "startedread": false,
       "audio": false
     },
     {
@@ -123,9 +107,7 @@
       "id": 9,
       "isread": false,
       "reads": "",
-      "status ": false,
-      "startedread": false,
-      "startedBook": false,
+      "status": "",
       "just": true,
       "audio": false
     }

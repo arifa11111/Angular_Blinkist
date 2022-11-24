@@ -1,31 +1,31 @@
 export class Book {
   [x: string]: any;
-  public id: number | undefined;
-  public audio: boolean | undefined;
-  public authorName: string | undefined;
-  public cardName: string | undefined;
-  public isread: boolean | undefined;
-  public just: boolean | undefined;
-  public reads: string | undefined;
-  public src: string | undefined;
-  public startedBook: boolean | undefined;
-  public startedread: boolean | undefined;
-  public status: boolean | undefined;
-  public timeStamp: string | undefined;
+  public id: number ;
+  public audio: boolean ;
+  public authorName: string ;
+  public cardName: string ;
+  public isread: boolean ;
+  public just: boolean ;
+  public reads: string ;
+  public src: string ;
+  public startedBook: boolean ;
+  public startedread: boolean ;
+  public status: string;
+  public timeStamp: string ;
 
   constructor(
-    id: number | undefined,
-    audio: boolean | undefined,
-    authorName: string | undefined,
-    cardName: string | undefined,
-    isread: boolean | undefined,
-    just: boolean | undefined,
-    reads: string | undefined,
-    src: string | undefined,
-    startedBook: boolean | undefined,
-    startedread: boolean | undefined,
-    status: boolean | undefined,
-    timeStamp: string | undefined
+    id: number ,
+    audio: boolean ,
+    authorName: string ,
+    cardName: string ,
+    isread: boolean ,
+    just: boolean ,
+    reads: string ,
+    src: string ,
+    startedBook: boolean ,
+    startedread: boolean ,
+    status: string ,
+    timeStamp: string 
   ) {
     this.id=id;
     this.audio=audio;

@@ -4,6 +4,7 @@
   background: #ffffff;
   border: 1px solid #e1ecfc;
   border-radius: 8px;
+  border-bottom: none;
 }
 .outerbook:hover{
   background: #F1F6F4;
