@@ -82,5 +82,5 @@ export class AppConstants {
   bookList: Book[]=[];
   modal=0;
   id:number=0;
-  searchItem = '';
+  searchItem: string = '';
 }

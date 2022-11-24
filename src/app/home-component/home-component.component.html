@@ -1,17 +1,15 @@
-<div class="home">
-  <div class="banner">
-    <app-banner></app-banner>
-  </div>
+<div class="banner">
+  <app-banner></app-banner>
+</div>
+<div class="container">
   <div class="bar">
     <svg-icon src="../../assets/icons/search.svg" class="icon"></svg-icon>
     <input
       type="text"
       placeholder="Search by title or author"
       class="search"
-      [(ngModel)]=constants.searchItem
+      [(ngModel)]="constants.searchItem"
     />
   </div>
-  <div class="list">
-    <app-book-list></app-book-list>
-  </div>
 </div>
+<app-book-list></app-book-list>

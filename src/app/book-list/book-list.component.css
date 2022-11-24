@@ -5,12 +5,14 @@
   margin: 20px 11.8rem 40px 0px;
 }
 .booklist {
-  width: 78%;
+  width: 72%;
   margin: 0px 15% 10% 15%;
 }
 
 .container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .blinks {

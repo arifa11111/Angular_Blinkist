@@ -10,19 +10,19 @@
         <div class="row" >
           <div class="icontext" *ngFor="let item of constants.row1;let i=index" >
             <svg-icon src={{item[0]}}></svg-icon>
-            <div class="h3popup" (click)="navFun(i)">{{item[1]}}</div>
+            <div class="h3popup pointer" (click)="navFun(i)">{{item[1]}}</div>
           </div>
         </div>
         <div class="row" >
           <div class="icontext" *ngFor="let item of constants.row2;">
             <svg-icon src={{item[0]}}></svg-icon>
-            <div class="h3popup">{{item[1]}}</div>
+            <div class="h3popup pointer">{{item[1]}}</div>
           </div>
         </div>
         <div class="row" >
           <div class="icontext" *ngFor="let item of constants.row3;">
             <svg-icon src={{item[0]}}></svg-icon>
-            <div class="h3popup">{{item[1]}}</div>
+            <div class="h3popup pointer">{{item[1]}}</div>
           </div>
         </div>
       </div>

@@ -4,6 +4,7 @@
 }
 .container{
   padding-top: 12px;
+  cursor: pointer;
 }
 .short {
   background: #dfe8f6;
