@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build:components": "npm install -g @angular/cli && cd components && npm install && npm run lint && npm run build",
+    "build:components": "npm install -g @angular/cli && cd components && npm i --legacy-peer-deps && npm run lint && npm run build",
     "build":"ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
