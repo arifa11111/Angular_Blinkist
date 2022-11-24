@@ -1,4 +1,4 @@
-import { Component, DoCheck, OnInit } from '@angular/core';
+import { Component, DoCheck, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { AppConstants } from '../app.constants';
 import { Book } from '../book/book.model';
 import { BookDataService } from '../shared/book-data.service';
@@ -9,9 +9,12 @@ import { BookDataService } from '../shared/book-data.service';
   styleUrls: ['./my-library.component.css'],
 })
 export class MyLibraryComponent implements OnInit{
+
   heading: string = 'My Library';
+
   constructor(private bookService: BookDataService,public constants:AppConstants) {
   }
+
 
   tab: number = 1;
   currentlyReading : Book[] = [];
@@ -38,12 +41,6 @@ export class MyLibraryComponent implements OnInit{
         this.finished.push(book)
       })
     });
-  }
-
-  onBtnClick(book : Book){
-      book.isread = !book.isread;
-      this.bookService.updateBooks(book).subscribe(books => {
-      })
   }
 
   ngOnInit(): void {

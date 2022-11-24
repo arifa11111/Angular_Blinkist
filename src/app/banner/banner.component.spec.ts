@@ -1,3 +1,4 @@
+import { Component } from '@angular/core';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { BannerComponent } from './banner.component';
@@ -11,13 +12,17 @@ describe('BannerComponent', () => {
       declarations: [ BannerComponent ]
     })
     .compileComponents();
-
-    fixture = TestBed.createComponent(BannerComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
   });
 
+  it('detect changes in banner',()=>{
+    fixture = TestBed.createComponent(BannerComponent);
+    const component = fixture.componentInstance;
+    expect(component.BannerHeading).toEqual('Explore Books on entrepreneurship')
+  })
+
   it('should create', () => {
+    fixture = TestBed.createComponent(BannerComponent);
+    const component=fixture.componentInstance;
     expect(component).toBeTruthy();
   });
 });

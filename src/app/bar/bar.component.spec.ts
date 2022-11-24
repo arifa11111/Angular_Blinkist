@@ -20,4 +20,11 @@ describe('BarComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('svg-icon should render in bar',()=>{
+    const fixture = TestBed.createComponent(BarComponent);
+    const compiled = fixture.nativeElement as HTMLElement
+    const app = compiled.querySelector('svg-icon');
+    expect(app).toBeTruthy()
+  })
 });

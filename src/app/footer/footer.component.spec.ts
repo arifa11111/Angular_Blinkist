@@ -20,4 +20,9 @@ describe('FooterComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('content in footer',()=>{
+    const component = fixture.nativeElement as HTMLElement
+    expect(component.querySelector('img')?.alt).toContain("logo");
+  })
 });

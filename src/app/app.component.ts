@@ -8,7 +8,7 @@ import { BookService } from './book-list/book-list.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Blinkist_Angular';
+  title = 'BlinkistAngular';
 
   constructor(
     public constants: AppConstants,

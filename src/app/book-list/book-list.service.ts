@@ -28,11 +28,11 @@ export class BookService{
         })
       )
       .subscribe(books => {
+        this.constants.bookList=[]
         return books.map(book=>{
           this.constants.bookList.push(book)
         })
       });
-      console.log(this.constants.bookList)
 
    }
 }

@@ -15,7 +15,6 @@
       <span *ngIf="tab == 1" class="content booksContainer">
         <ng-container  *ngFor="let book of currentlyReading">
           <app-book class="book" [book]="book"
-          (click) = onBtnClick(book)
           [btnText]="'finished'"
           ></app-book>
         </ng-container>
@@ -23,7 +22,6 @@
       <span *ngIf="tab == 2" class="content booksContainer">
         <ng-container  *ngFor="let book of finished">
           <app-book class="book" [book]="book"
-          (click) = onBtnClick(book)
           [btnText]="'read'"
           ></app-book>
         </ng-container>

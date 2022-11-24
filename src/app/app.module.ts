@@ -21,6 +21,7 @@ import { HomeComponentComponent } from './home-component/home-component.componen
 import { FormsModule } from '@angular/forms';
 import { FilterPipe } from './filter.pipe';
 import { BarComponent } from './bar/bar.component';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({

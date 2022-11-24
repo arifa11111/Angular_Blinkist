@@ -38,11 +38,10 @@ export class BookDataService {
   updateFinish(book: Book) {
     const id = Number(book.id) - 1;
       book.status ='finished';
-      console.log(book)
     return this.http.put(
       `https://blinkist-angular-default-rtdb.firebaseio.com/Data/${id}.json`,
       book
     )
-    .subscribe(books=>console.log(book))
+    .subscribe()
   }
 }

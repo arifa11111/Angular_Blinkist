@@ -79,8 +79,22 @@ export class AppConstants {
   ];
   tabs = ['Synopsis', 'Who is it for?', 'About the author','Currently reading','Finished'];
 
-  bookList: Book[]=[];
+  bookList: Book[]=[{
+    src: "../../assets/icons/bigboss.svg",
+    cardName: "Being Boss",
+    authorName: "Kathleen Shannon and Emily...",
+    timeStamp: "13-minute read",
+    id: 1,
+    isread: false,
+    reads: "",
+    status: "",
+    just: false,
+    audio: false,
+    startedBook: false,
+    startedread: false
+  }];
   modal=0;
   id:number=0;
   searchItem: string = '';
+  reload=false
 }

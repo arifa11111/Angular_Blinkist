@@ -12,10 +12,6 @@ export class ReadnowBarComponent implements OnInit {
 
   constructor(public constants:AppConstants,private router:Router) { }
 
-  bookdetail() {
-    this.router.navigate(['/bookdetails'])
-    }
-
   ngOnInit(): void {
   }
 
