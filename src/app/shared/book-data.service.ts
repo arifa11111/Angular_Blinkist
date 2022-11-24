@@ -8,7 +8,7 @@ import { AppConstants } from '../app.constants';
   providedIn: 'root',
 })
 export class BookDataService {
-  constructor(private http: HttpClient, private constant : AppConstants) {}
+  constructor(private http: HttpClient, private constant: AppConstants) {}
 
   fetchBooks() {
     return this.http
@@ -26,10 +26,23 @@ export class BookDataService {
       );
   }
 
-  updateBooks(book : Book){
+  updateBooks(book: Book) {
     const id = Number(book.id) - 1;
-    const idx = this.constant.bookList.findIndex((obj => obj.id == book.id));
-    this.constant.bookList[idx].isread = book.isread;
-    return this.http.put(`https://blinkist-angular-default-rtdb.firebaseio.com/Data/${id}.json`, book);
+      book.status ='reading' ;
+    return this.http.put(
+      `https://blinkist-angular-default-rtdb.firebaseio.com/Data/${id}.json`,
+      book
+    )
+  }
+
+  updateFinish(book: Book) {
+    const id = Number(book.id) - 1;
+      book.status ='finished';
+      console.log(book)
+    return this.http.put(
+      `https://blinkist-angular-default-rtdb.firebaseio.com/Data/${id}.json`,
+      book
+    )
+    .subscribe(books=>console.log(book))
   }
 }

@@ -15,9 +15,10 @@
     </div>
     <app-readnow-bar *ngIf="btnText == 'read'"></app-readnow-bar>
     <app-finished-bar *ngIf="btnText == 'finished'"></app-finished-bar>
+    <app-bar *ngIf="book?.status!='' && btnText==''"></app-bar>
     <button
       class="btn"
-      *ngIf="btnText != 'read' && btnText !='finished'"
+      *ngIf=" book?.status==''"
       routerLink="/bookdetails"
       (click)="addToLibrary(book?.id)"
     >

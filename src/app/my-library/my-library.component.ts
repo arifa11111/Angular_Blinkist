@@ -29,15 +29,12 @@ export class MyLibraryComponent implements OnInit{
         this.currentlyReading.push(book)
       })
     });
-    console.log(this.currentlyReading);
-
   }
 
   getFinishedBooks(){
     this.bookService.fetchBooks().subscribe(books => {
       return books.filter(item => item.status == 'finished')
       .map(book => {
-        console.log(book.status)
         this.finished.push(book)
       })
     });
@@ -46,7 +43,6 @@ export class MyLibraryComponent implements OnInit{
   onBtnClick(book : Book){
       book.isread = !book.isread;
       this.bookService.updateBooks(book).subscribe(books => {
-        console.log(books);
       })
   }
 

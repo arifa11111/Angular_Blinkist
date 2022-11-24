@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { AppConstants } from '../app.constants';
 
 @Component({
@@ -9,10 +10,10 @@ import { AppConstants } from '../app.constants';
 export class ReadnowBarComponent implements OnInit {
 
 
-  constructor(public constants:AppConstants) { }
+  constructor(public constants:AppConstants,private router:Router) { }
 
   bookdetail() {
-    throw new Error('Method not implemented.');
+    this.router.navigate(['/bookdetails'])
     }
 
   ngOnInit(): void {

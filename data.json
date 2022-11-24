@@ -8,7 +8,7 @@
       "id": 1,
       "isread": false,
       "reads": "",
-      "status": "finished",
+      "status": "",
       "just": false,
       "audio": false
     },
@@ -20,7 +20,7 @@
       "id": 2,
       "isread": true,
       "reads": "1.9k reads",
-      "status": "reading",
+      "status": "",
       "just": false,
       "audio": true
     },

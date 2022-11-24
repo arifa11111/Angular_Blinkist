@@ -20,6 +20,7 @@ import { BooksComponent } from './my-library/books/books.component';
 import { HomeComponentComponent } from './home-component/home-component.component';
 import { FormsModule } from '@angular/forms';
 import { FilterPipe } from './filter.pipe';
+import { BarComponent } from './bar/bar.component';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { FilterPipe } from './filter.pipe';
     MyLibraryComponent,
     BooksComponent,
     HomeComponentComponent,
-    FilterPipe
+    FilterPipe,
+    BarComponent
   ],
   imports: [
     BrowserModule,

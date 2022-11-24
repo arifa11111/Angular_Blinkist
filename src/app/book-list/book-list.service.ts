@@ -32,5 +32,7 @@ export class BookService{
           this.constants.bookList.push(book)
         })
       });
+      console.log(this.constants.bookList)
+
    }
 }

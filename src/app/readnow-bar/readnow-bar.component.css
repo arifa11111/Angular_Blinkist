@@ -4,6 +4,9 @@
   width: 283px;
   height: 15px;
 }
+.container{
+  padding-top: 12px;
+}
 .readagain{
   width:  283px;
   font-weight: 500;
