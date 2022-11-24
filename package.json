@@ -4,8 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build":"ng serve",
     "build:components": "npm install -g @angular/cli@latest && cd components && npm install && npm run lint && npm run build",
+    "build":"ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
