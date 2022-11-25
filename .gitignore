@@ -13,12 +13,16 @@ yarn-error.log
 
 # IDEs and editors
 .idea/
+.vscode
 .project
 .classpath
 .c9/
 *.launch
 .settings/
 *.sublime-workspace
+.browserslistrc
+.editorconfig
+
 
 # Visual Studio Code
 .vscode/*
