@@ -93,4 +93,36 @@
     z-index: 10;
   }
 }
+@media only screen and (max-width: 450px) {
+  .sub {
+    display: flex;
+    gap: 0;
+  }
+  .innermodel {
+    height: 550px;
+    opacity: 1;
+    background: #f1f6f4;
+    margin: 30px 20px 10px 30px;
+  }
+  .modal {
+    z-index: 20;
+    position: absolute;
+    width: 100%;
+    min-height: fit-content;
+    margin-top: 500px;
+    background: rgba(157, 163, 166, 0.45);
+  }
+  .outermodel {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background: #f1f6f4;
+    width: 100%;
+    height: 550px;
+    margin-top: 90px;
+    z-index: 10;
+  }
+}
 

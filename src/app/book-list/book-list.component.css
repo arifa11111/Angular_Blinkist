@@ -37,7 +37,13 @@
   .filter{
     display: flex;
     flex-wrap: wrap;
-    /* width: 200%; */
     gap: 20%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .filter{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50%;
   }
 }

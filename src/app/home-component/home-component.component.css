@@ -53,4 +53,18 @@
     width: 88%;
   }
 }
+@media only screen and (max-width: 450px) {
+  .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 85%;
+  }
+  .bar {
+    display: flex;
+    margin: 0px 320px 4rem 0px;
+    border-bottom: 2px solid black;
+    width: 330px;
+  }
+}
 

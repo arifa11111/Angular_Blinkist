@@ -132,3 +132,21 @@
   height: 100px;
   display: block;
 }
+@media only screen and (max-width: 900px) {
+  .outercontainer {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    height: 30%;
+    margin: 10px 0px 0rem 40%;
+  }
+  .sub2{
+    background-color: red;
+    width: fit-content;
+  }
+  .tabcontainer{
+    margin: 1px;
+  }
+}
+

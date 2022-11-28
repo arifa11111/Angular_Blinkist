@@ -104,3 +104,28 @@
     justify-content: space-around;
   }
 }
+@media only screen and (max-width: 450px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  img[alt="svg"]{
+    display: none;
+  }
+  .mainContainer {
+    display: flex;
+    gap: 15px;
+  }
+  .subContainer {
+    display: flex !important;
+    flex-direction: row;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    height: 86px;
+    align-items: center;
+  }
+}
