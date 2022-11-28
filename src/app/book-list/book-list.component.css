@@ -33,3 +33,11 @@
   display: flex;
   width: 115%;
 }
+@media only screen and (max-width: 900px) {
+  .filter{
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 200%; */
+    gap: 20%;
+  }
+}

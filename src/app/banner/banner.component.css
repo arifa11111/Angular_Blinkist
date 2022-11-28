@@ -45,3 +45,24 @@
 .bannerGirl{
   height: 264px;
 }
+
+@media only screen and (max-width: 900px) {
+  .mainContainer {
+    background-color: #F1F6F4;
+    display: flex;
+    margin: 0 auto;
+    gap: 30%;
+    width: 72%;
+    height: 264px;
+    justify-content: center;
+  }
+  .leftContainer {
+    display: flex;
+    flex-direction: column;
+    bottom: 45px;
+    top: 45px;
+    left: 40%;
+    position: relative;
+    gap: 15px;
+  }
+}
